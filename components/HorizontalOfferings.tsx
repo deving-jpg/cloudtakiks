@@ -11,7 +11,7 @@ import { useLang } from "./LanguageProvider";
 const GAP = 24; // matches gap-6
 
 export default function HorizontalOfferings() {
-  const { t } = useLang();
+  const { t, dir } = useLang();
   const OFFERINGS = t.offerings;
   const viewportRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
@@ -66,7 +66,7 @@ export default function HorizontalOfferings() {
         <div ref={viewportRef} className="mt-14 overflow-hidden">
           <motion.div
             className="flex gap-6"
-            animate={{ x: -offset }}
+            animate={{ x: dir === "rtl" ? offset : -offset }}
             transition={{ type: "spring", stiffness: 260, damping: 34 }}
           >
             {OFFERINGS.map((o, i) => (

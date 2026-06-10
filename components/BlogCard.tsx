@@ -31,6 +31,8 @@ export function BlogCard({ post, index }: { post: Post; index: number }) {
           <img
             src={post.image}
             alt={post.title}
+            loading="lazy"
+            decoding="async"
             className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
           />
         </div>
@@ -79,6 +81,8 @@ export function FeaturedBlog({ post }: { post: Post }) {
         <img
           src={post.image}
           alt={post.title}
+          loading="lazy"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
         />
       )}

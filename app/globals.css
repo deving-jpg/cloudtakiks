@@ -119,6 +119,24 @@ body {
   background-size: 72px 72px;
 }
 
+/* ===== mobile performance — large blurs are very GPU-heavy on phones.
+   Shrink them on small screens (keeps the glow, ~10× cheaper to paint). ===== */
+@media (max-width: 767px) {
+  .blur-\[120px\],
+  .blur-\[130px\],
+  .blur-\[140px\],
+  .blur-\[150px\],
+  .blur-\[160px\] {
+    --tw-blur: blur(46px);
+  }
+  .backdrop-blur-xl {
+    --tw-backdrop-blur: blur(10px);
+  }
+  .backdrop-blur-md {
+    --tw-backdrop-blur: blur(6px);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

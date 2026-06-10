@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useInView } from "framer-motion";
 import { ComposableMap, Geographies, Geography, Marker, Line } from "react-simple-maps";
 
@@ -17,8 +17,12 @@ const OFFICES: { name: string; coords: [number, number] }[] = [
 
 export default function WorldMap() {
   const ref = useRef<HTMLDivElement>(null);
-  // re-triggers: assembles when scrolled into view, rolls back when scrolled away
-  const revealed = useInView(ref, { margin: "-15% 0px -15% 0px" });
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    setIsMobile(window.matchMedia("(max-width: 767px)").matches);
+  }, []);
+  // desktop: re-triggers (rolls back on scroll up). mobile: lighter, plays once.
+  const revealed = useInView(ref, { once: isMobile, margin: "-15% 0px -15% 0px" });
   const [hovered, setHovered] = useState<string | null>(null);
   const [pos, setPos] = useState({ x: 0, y: 0 });
 
@@ -62,8 +66,15 @@ export default function WorldMap() {
                       transformBox: "fill-box",
                       transformOrigin: "center",
                       opacity: revealed ? 1 : 0,
-                      transform: revealed ? "translate(0px,0px) scale(1)" : `translate(${dx}px,${dy}px) scale(0.35)`,
-                      transition: `transform 750ms cubic-bezier(0.22,1,0.36,1) ${delay}ms, opacity 520ms ease ${delay}ms, fill 250ms ease, filter 250ms ease`,
+                      // mobile: opacity-only reveal (skip the heavy 177-path scatter transform)
+                      transform: isMobile
+                        ? undefined
+                        : revealed
+                          ? "translate(0px,0px) scale(1)"
+                          : `translate(${dx}px,${dy}px) scale(0.35)`,
+                      transition: isMobile
+                        ? `opacity 450ms ease ${Math.min(delay, 300)}ms, fill 250ms ease`
+                        : `transform 750ms cubic-bezier(0.22,1,0.36,1) ${delay}ms, opacity 520ms ease ${delay}ms, fill 250ms ease, filter 250ms ease`,
                     },
                     hover: {
                       fill: "#4F7CFE",

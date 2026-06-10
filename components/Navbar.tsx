@@ -35,7 +35,7 @@ export default function Navbar() {
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className={clsx(
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-        scrolled ? "border-b border-content/10 bg-bg/85 backdrop-blur-xl" : "border-b border-transparent"
+        open ? "bg-bg" : scrolled ? "border-b border-content/10 bg-bg/85 backdrop-blur-xl" : "border-b border-transparent"
       )}
     >
       <nav className="container-x flex h-[74px] items-center justify-between">
@@ -101,7 +101,7 @@ export default function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-            className="overflow-hidden border-t border-content/10 bg-bg/97 backdrop-blur-xl md:hidden"
+            className="overflow-hidden border-t border-content/10 bg-bg shadow-card md:hidden"
           >
             <ul className="container-x flex flex-col gap-1 py-4">
               {NAV.map((item, i) => (

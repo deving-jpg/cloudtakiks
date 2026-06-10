@@ -12,10 +12,10 @@ export function MarqueePills() {
         {row.map((p, i) => (
           <div
             key={i}
-            className="mr-4 flex items-center gap-3 rounded-full border border-content/10 bg-surface px-5 py-2.5 shadow-card"
+            className="me-4 flex items-center gap-3 rounded-full border border-content/10 bg-surface px-5 py-2.5 shadow-card"
           >
             <span className="flex h-9 items-center justify-center rounded-lg border border-content/10 bg-white px-2">
-              <img src={p.src} alt={p.name} className="h-5 w-auto object-contain" />
+              <img src={p.src} alt={p.name} loading="lazy" decoding="async" className="h-5 w-auto object-contain" />
             </span>
             <span className="whitespace-nowrap text-sm font-extrabold uppercase tracking-brand text-content">
               {p.name}
