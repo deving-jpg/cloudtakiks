@@ -8,3 +8,6 @@
 .vercel
 next-env.d.ts
 *.tsbuildinfo
+
+# Local-only internal pages — never deploy to the public Vercel site
+/app/analytics

@@ -22,9 +22,22 @@ export const SITE = {
 export const NAV = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
+  { label: "Our Team", href: "/team" },
   { label: "Offerings", href: "/offerings" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
+];
+
+// Team member photos — language-independent, ordered to match team.members in lib/i18n.ts.
+// Drop image files in public/img/team/ matching these paths. Any member without a photo
+// (or whose file is missing) falls back to an initials avatar automatically.
+export const TEAM_PHOTOS: (string | null)[] = [
+  "/img/team/omar-haddad.jpg", // Founder & CEO
+  "/img/team/elena-rossi.jpg", // CTO
+  "/img/team/diego-morales.jpg", // Head of Cloud Operations
+  "/img/team/sara-khan.jpg", // SAP Business One Lead
+  "/img/team/lucas-fernandez.jpg", // Cybersecurity Lead
+  "/img/team/maria-castro.jpg", // Head of Client Success
 ];
 
 export const STATS = [

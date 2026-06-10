@@ -4,7 +4,7 @@ export const DICT = {
   en: {
     langLabel: "English",
     brand: "Cloud Taktiks",
-    nav: ["Home", "About", "Offerings", "Blog", "Contact"],
+    nav: ["Home", "About", "Our Team", "Offerings", "Blog", "Contact"],
 
     clientSupport: "Client Support",
     startMigration: "Start your migration",
@@ -125,6 +125,27 @@ export const DICT = {
       ],
     },
 
+    team: {
+      eyebrow: "Our team",
+      title: "The people behind your cloud.",
+      intro: "Cloud Taktiks is powered by SAP and cloud specialists across three continents — engineers, security experts and client partners who have been shipping since 2016.",
+      stats: [
+        { value: 60, suffix: "+", label: "Specialists" },
+        { value: 3, suffix: "", label: "Continents" },
+        { value: 8, suffix: "+", label: "Years together" },
+      ],
+      leadership: { eyebrow: "Leadership", title: "Meet the team.", intro: "Seasoned leaders steering strategy, technology and client success across the Middle East, Europe and Latin America." },
+      members: [
+        { name: "Omar Haddad", role: "Founder & CEO", region: "Middle East", bio: "Sets the vision and keeps Cloud Taktiks obsessed with client outcomes." },
+        { name: "Elena Rossi", role: "Chief Technology Officer", region: "Europe", bio: "Architects the secure, scalable cloud platforms behind every deployment." },
+        { name: "Diego Morales", role: "Head of Cloud Operations", region: "Latin America", bio: "Keeps environments fast, monitored and running around the clock." },
+        { name: "Sara Khan", role: "SAP Business One Lead", region: "Middle East", bio: "Leads SAP B1 migrations and optimizations on HANA and SQL." },
+        { name: "Lucas Fernández", role: "Cybersecurity Lead", region: "Europe", bio: "Hardens every system to ISO/IEC 27001:2022 and beyond." },
+        { name: "María Castro", role: "Head of Client Success", region: "Latin America", bio: "Makes sure every client feels supported, every single day." },
+      ],
+      joinSection: { eyebrow: "Careers", title: "Want to build the cloud with us?", intro: "We're always looking for SAP, cloud and security talent who care about doing it right.", cta: "Get in touch" },
+    },
+
     offeringsPage: { eyebrow: "Our offerings", title: "One partner. Whole stack.", intro: "Secure hosting, world-class endpoint protection, remote access and productivity — engineered around SAP Business One and built to scale with you." },
 
     blogPage: { eyebrow: "Insights", title: "The Cloud Taktiks blog.", intro: "Practical thinking on cloud ERP, SAP Business One, security frameworks and business continuity." },
@@ -152,7 +173,7 @@ export const DICT = {
   ar: {
     langLabel: "العربية",
     brand: "كلاود تكتيكس",
-    nav: ["الرئيسية", "من نحن", "خدماتنا", "المدوّنة", "تواصل معنا"],
+    nav: ["الرئيسية", "من نحن", "فريقنا", "خدماتنا", "المدوّنة", "تواصل معنا"],
 
     clientSupport: "دعم العملاء",
     startMigration: "ابدأ رحلتك إلى السحابة",
@@ -271,6 +292,27 @@ export const DICT = {
       ],
     },
 
+    team: {
+      eyebrow: "فريقنا",
+      title: "الأشخاص خلف سحابتك.",
+      intro: "تعتمد كلاود تكتيكس على متخصّصين في SAP والسحابة عبر ثلاث قارات — مهندسون وخبراء أمن وشركاء نجاح للعملاء يعملون بثبات منذ 2016.",
+      stats: [
+        { value: 60, suffix: "+", label: "متخصّص" },
+        { value: 3, suffix: "", label: "قارات" },
+        { value: 8, suffix: "+", label: "سنوات معًا" },
+      ],
+      leadership: { eyebrow: "القيادة", title: "تعرّف على الفريق.", intro: "قادة متمرّسون يوجّهون الاستراتيجية والتقنية ونجاح العملاء عبر الشرق الأوسط وأوروبا وأمريكا اللاتينية." },
+      members: [
+        { name: "عمر حدّاد", role: "المؤسّس والرئيس التنفيذي", region: "الشرق الأوسط", bio: "يرسم الرؤية ويبقي كلاود تكتيكس مركّزة على نتائج العملاء." },
+        { name: "إيلينا روسي", role: "المدير التقني", region: "أوروبا", bio: "تصمّم منصّات السحابة الآمنة والقابلة للتوسّع خلف كل عملية نشر." },
+        { name: "دييغو موراليس", role: "رئيس عمليات السحابة", region: "أمريكا اللاتينية", bio: "يحافظ على بيئات سريعة ومراقَبة تعمل على مدار الساعة." },
+        { name: "سارة خان", role: "قائدة SAP Business One", region: "الشرق الأوسط", bio: "تقود عمليات ترحيل وتحسين SAP B1 على HANA وSQL." },
+        { name: "لوكاس فيرنانديز", role: "قائد الأمن السيبراني", region: "أوروبا", bio: "يُحصّن كل نظام وفق ISO/IEC 27001:2022 وأكثر." },
+        { name: "ماريا كاسترو", role: "رئيسة نجاح العملاء", region: "أمريكا اللاتينية", bio: "تحرص على أن يشعر كل عميل بالدعم كل يوم." },
+      ],
+      joinSection: { eyebrow: "وظائف", title: "هل تريد بناء السحابة معنا؟", intro: "نبحث دائمًا عن مواهب في SAP والسحابة والأمن ممّن يهتمّون بإنجاز العمل على الوجه الصحيح.", cta: "تواصل معنا" },
+    },
+
     offeringsPage: { eyebrow: "خدماتنا", title: "شريك واحد. منظومة كاملة.", intro: "استضافة آمنة، وحماية عالمية للنقاط الطرفية، ووصول عن بُعد وإنتاجية — مصمّمة حول SAP Business One ومبنيّة لتنمو معك." },
 
     blogPage: { eyebrow: "رؤى", title: "مدوّنة كلاود تكتيكس.", intro: "أفكار عملية حول تخطيط الموارد السحابي وSAP Business One وأطر الأمان واستمرارية الأعمال." },
@@ -298,7 +340,7 @@ export const DICT = {
   es: {
     langLabel: "Español",
     brand: "Cloud Taktiks",
-    nav: ["Inicio", "Nosotros", "Servicios", "Blog", "Contacto"],
+    nav: ["Inicio", "Nosotros", "Equipo", "Servicios", "Blog", "Contacto"],
 
     clientSupport: "Soporte al cliente",
     startMigration: "Inicia tu migración",
@@ -414,6 +456,27 @@ export const DICT = {
       ],
     },
 
+    team: {
+      eyebrow: "Nuestro equipo",
+      title: "Las personas detrás de tu nube.",
+      intro: "Cloud Taktiks está impulsada por especialistas en SAP y nube en tres continentes — ingenieros, expertos en seguridad y socios de clientes que entregan resultados desde 2016.",
+      stats: [
+        { value: 60, suffix: "+", label: "Especialistas" },
+        { value: 3, suffix: "", label: "Continentes" },
+        { value: 8, suffix: "+", label: "Años juntos" },
+      ],
+      leadership: { eyebrow: "Liderazgo", title: "Conoce al equipo.", intro: "Líderes con experiencia que dirigen la estrategia, la tecnología y el éxito del cliente en Medio Oriente, Europa y América Latina." },
+      members: [
+        { name: "Omar Haddad", role: "Fundador y CEO", region: "Medio Oriente", bio: "Define la visión y mantiene a Cloud Taktiks obsesionada con los resultados del cliente." },
+        { name: "Elena Rossi", role: "Directora de Tecnología", region: "Europa", bio: "Diseña las plataformas en la nube seguras y escalables detrás de cada despliegue." },
+        { name: "Diego Morales", role: "Jefe de Operaciones en la Nube", region: "América Latina", bio: "Mantiene los entornos rápidos, monitoreados y funcionando las 24 horas." },
+        { name: "Sara Khan", role: "Líder de SAP Business One", region: "Medio Oriente", bio: "Lidera las migraciones y optimizaciones de SAP B1 en HANA y SQL." },
+        { name: "Lucas Fernández", role: "Líder de Ciberseguridad", region: "Europa", bio: "Refuerza cada sistema según ISO/IEC 27001:2022 y más allá." },
+        { name: "María Castro", role: "Jefa de Éxito del Cliente", region: "América Latina", bio: "Se asegura de que cada cliente se sienta respaldado, cada día." },
+      ],
+      joinSection: { eyebrow: "Carreras", title: "¿Quieres construir la nube con nosotros?", intro: "Siempre buscamos talento en SAP, nube y seguridad a quienes les importe hacerlo bien.", cta: "Contáctanos" },
+    },
+
     offeringsPage: { eyebrow: "Nuestros servicios", title: "Un socio. Toda la pila.", intro: "Alojamiento seguro, protección de endpoints de clase mundial, acceso remoto y productividad — diseñados en torno a SAP Business One y creados para crecer contigo." },
 
     blogPage: { eyebrow: "Perspectivas", title: "El blog de Cloud Taktiks.", intro: "Reflexiones prácticas sobre ERP en la nube, SAP Business One, marcos de seguridad y continuidad del negocio." },
@@ -441,7 +504,7 @@ export const DICT = {
   fr: {
     langLabel: "Français",
     brand: "Cloud Taktiks",
-    nav: ["Accueil", "À propos", "Services", "Blog", "Contact"],
+    nav: ["Accueil", "À propos", "Notre équipe", "Services", "Blog", "Contact"],
 
     clientSupport: "Support client",
     startMigration: "Démarrer votre migration",
@@ -555,6 +618,27 @@ export const DICT = {
         { n: "06", title: "Collaboration et autonomisation", body: "Nous donnons aux entreprises les moyens d'exploiter tout le potentiel du cloud, en favorisant la croissance et l'efficacité." },
         { n: "07", title: "Agilité et adaptabilité", body: "Nous restons agiles et prêts à pivoter, pour relever efficacement les nouveaux défis et besoins des clients." },
       ],
+    },
+
+    team: {
+      eyebrow: "Notre équipe",
+      title: "Les personnes derrière votre cloud.",
+      intro: "Cloud Taktiks s'appuie sur des spécialistes SAP et cloud répartis sur trois continents — ingénieurs, experts en sécurité et partenaires clients qui livrent depuis 2016.",
+      stats: [
+        { value: 60, suffix: "+", label: "Spécialistes" },
+        { value: 3, suffix: "", label: "Continents" },
+        { value: 8, suffix: "+", label: "Années ensemble" },
+      ],
+      leadership: { eyebrow: "Direction", title: "Rencontrez l'équipe.", intro: "Des dirigeants chevronnés qui pilotent la stratégie, la technologie et la réussite client au Moyen-Orient, en Europe et en Amérique latine." },
+      members: [
+        { name: "Omar Haddad", role: "Fondateur et CEO", region: "Moyen-Orient", bio: "Définit la vision et garde Cloud Taktiks obsédée par les résultats des clients." },
+        { name: "Elena Rossi", role: "Directrice technique", region: "Europe", bio: "Conçoit les plateformes cloud sécurisées et évolutives derrière chaque déploiement." },
+        { name: "Diego Morales", role: "Responsable des opérations cloud", region: "Amérique latine", bio: "Maintient des environnements rapides, surveillés et disponibles 24h/24." },
+        { name: "Sara Khan", role: "Responsable SAP Business One", region: "Moyen-Orient", bio: "Dirige les migrations et optimisations SAP B1 sur HANA et SQL." },
+        { name: "Lucas Fernández", role: "Responsable cybersécurité", region: "Europe", bio: "Renforce chaque système selon ISO/IEC 27001:2022 et au-delà." },
+        { name: "María Castro", role: "Responsable de la réussite client", region: "Amérique latine", bio: "Veille à ce que chaque client se sente accompagné, chaque jour." },
+      ],
+      joinSection: { eyebrow: "Carrières", title: "Envie de bâtir le cloud avec nous ?", intro: "Nous recherchons en permanence des talents SAP, cloud et sécurité soucieux de bien faire.", cta: "Contactez-nous" },
     },
 
     offeringsPage: { eyebrow: "Nos services", title: "Un partenaire. Toute la pile.", intro: "Hébergement sécurisé, protection des terminaux de classe mondiale, accès distant et productivité — conçus autour de SAP Business One et faits pour évoluer avec vous." },
