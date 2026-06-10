@@ -1,0 +1,83 @@
+[
+  {
+    "slug": "competitive-edge-cloud-erp-smes",
+    "title": "The Competitive Edge of Cloud ERP for SMEs",
+    "excerpt": "How cloud-based enterprise solutions hand small and mid-sized businesses an outsized advantage.",
+    "date": "Dec 18, 2025",
+    "views": 315,
+    "category": "Technology",
+    "image": "/img/blogs/featured.png",
+    "body": [
+      "For years, enterprise resource planning was the preserve of large corporations with deep IT budgets. Cloud ERP has rewritten that rule. By moving the platform, the database and the infrastructure into a managed cloud environment, small and mid-sized enterprises can now run the same calibre of system the largest players rely on — without the capital cost of building it themselves.",
+      "The advantage is not only financial. Cloud ERP turns a fixed, depreciating asset into a flexible operating cost that scales with the business. Need more capacity for a busy quarter? It is provisioned in minutes. Opening a new branch in another country? The same system follows you there, with the same data, the same controls and the same support.",
+      "At Cloud Taktiks we see this every day with SAP Business One on Microsoft Azure and Huawei Cloud. Daily backups, 24/7 monitoring and ISO/IEC 27001:2022-aligned security mean an SME gets enterprise resilience out of the box — letting the team focus on growth instead of plumbing."
+    ]
+  },
+  {
+    "slug": "cloud-migration-roadmap-sap-b1",
+    "title": "Cloud Migration Roadmap for SAP Business One",
+    "excerpt": "A practical, low-risk path for moving your SAP systems to the cloud.",
+    "date": "Dec 18, 2025",
+    "views": 248,
+    "category": "Technology",
+    "image": "/img/blogs/cloud-migration.png",
+    "body": [
+      "A successful migration starts long before any data is moved. It starts with a clear assessment: which add-ons are in use, how the database is sized, where the integrations live and what the real recovery objectives are. Skipping this step is the single biggest cause of painful go-lives.",
+      "From there, the path is staged — a sandbox migration to validate, a parallel run to build confidence, and a tightly-scheduled cutover with a rollback plan ready in case anything drifts. Done well, the business experiences minimal disruption and users barely notice the ground shifting beneath them.",
+      "The reward is durable: lower total cost of ownership, elastic capacity, and a platform that is finally easy to back up, secure and scale."
+    ]
+  },
+  {
+    "slug": "cybersecurity-frameworks-cloud-erp",
+    "title": "Cybersecurity Frameworks for Cloud ERP",
+    "excerpt": "The security protocols and safeguards that keep enterprise cloud platforms resilient.",
+    "date": "Dec 18, 2025",
+    "views": 278,
+    "category": "Technology",
+    "image": "/img/blogs/cybersecurity.png",
+    "body": [
+      "ERP is where a company's most sensitive data lives — finance, customers, inventory, payroll. Protecting it in the cloud is less about a single product and more about layered defence: encryption at rest and in transit, strict access controls, continuous monitoring and a tested response plan.",
+      "Frameworks such as ISO/IEC 27001:2022 give that defence a structure. They turn good intentions into repeatable processes — and into evidence you can show auditors, partners and customers.",
+      "Pairing that governance with next-generation endpoint protection like CrowdStrike Falcon means threats are caught by behaviour, not just signatures, before they can spread."
+    ]
+  },
+  {
+    "slug": "future-of-erp-middle-east",
+    "title": "The Future of ERP in the Middle East",
+    "excerpt": "Emerging trends reshaping enterprise resource planning across the region.",
+    "date": "Dec 18, 2025",
+    "views": 244,
+    "category": "Technology",
+    "body": [
+      "The Middle East is moving to the cloud faster than almost anywhere — driven by ambitious national digital agendas, new data-residency options from hyperscalers, and a young, mobile-first workforce that expects modern tools.",
+      "For ERP, that means a shift from on-premise boxes to managed cloud platforms that are secure, localized and always available. Businesses want the agility to expand across borders without re-architecting every time.",
+      "Cloud Taktiks has built its practice around exactly this: SAP Business One delivered as a resilient, regionally-aware cloud service for organizations across the Gulf and beyond."
+    ]
+  },
+  {
+    "slug": "cloud-erp-training-user-adoption",
+    "title": "Cloud ERP Training & User Adoption Strategies",
+    "excerpt": "Implementation approaches that turn rollouts into real workforce enablement.",
+    "date": "Dec 18, 2025",
+    "views": 284,
+    "category": "Technology",
+    "body": [
+      "The best ERP in the world delivers nothing if people don't use it well. Adoption is a discipline of its own — and it is won with role-based training, clear champions inside each team, and documentation people actually reach for.",
+      "Phasing the rollout helps: start with a core group, gather feedback, refine the process, then expand. Small early wins build the momentum that carries a whole organization.",
+      "When training is treated as part of the project — not an afterthought — go-live becomes a launchpad rather than a cliff edge."
+    ]
+  },
+  {
+    "slug": "disaster-recovery-testing-erp",
+    "title": "Disaster Recovery Testing: Why It Matters for ERP",
+    "excerpt": "Why continuity planning is non-negotiable for mission-critical ERP systems.",
+    "date": "Dec 18, 2025",
+    "views": 311,
+    "category": "Technology",
+    "body": [
+      "A backup you have never restored is a hope, not a plan. Disaster recovery only becomes real when it is tested — regularly, and against the recovery time and recovery point objectives the business actually needs.",
+      "For ERP, the stakes are high: an outage can halt invoicing, shipping and payroll within hours. That is why we build high-availability and tested restore procedures into every environment we run.",
+      "The goal is simple but powerful: when something goes wrong, recovery is a routine, rehearsed procedure — not a crisis."
+    ]
+  }
+]
