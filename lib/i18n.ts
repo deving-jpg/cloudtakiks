@@ -1,4 +1,4 @@
-export type Lang = "en" | "ar";
+export type Lang = "en" | "ar" | "es" | "fr";
 
 export const DICT = {
   en: {
@@ -18,6 +18,7 @@ export const DICT = {
     readBlog: "Read the blog",
     learnMore: "Learn more",
     scroll: "Scroll",
+    loadingExperience: "Loading experience",
 
     heroEyebrow: "Cloud-based ERP Excellence · since 2016",
     heroLine1: "Your premium",
@@ -165,6 +166,7 @@ export const DICT = {
     readBlog: "اقرأ المدوّنة",
     learnMore: "اعرف المزيد",
     scroll: "مرّر للأسفل",
+    loadingExperience: "جارٍ تحميل التجربة",
 
     heroEyebrow: "تميّز في تخطيط موارد المؤسسات عبر السحابة · منذ 2016",
     heroLine1: "مزوّدك المميّز",
@@ -291,6 +293,292 @@ export const DICT = {
     rights: "جميع الحقوق محفوظة.",
     address: "دبي، الإمارات العربية المتحدة",
     regions: { "Middle East": "الشرق الأوسط", Europe: "أوروبا", "Latin America": "أمريكا اللاتينية" } as Record<string, string>,
+  },
+
+  es: {
+    langLabel: "Español",
+    brand: "Cloud Taktiks",
+    nav: ["Inicio", "Nosotros", "Servicios", "Blog", "Contacto"],
+
+    clientSupport: "Soporte al cliente",
+    startMigration: "Inicia tu migración",
+    exploreOfferings: "Explorar servicios",
+    ourStory: "Nuestra historia",
+    bookCall: "Agenda una llamada",
+    readMore: "Leer más",
+    getStarted: "Comenzar",
+    seeOffer: "Ver lo que ofrecemos",
+    allOfferings: "Todos los servicios",
+    readBlog: "Leer el blog",
+    learnMore: "Saber más",
+    scroll: "Desliza",
+    loadingExperience: "Cargando la experiencia",
+
+    heroEyebrow: "Excelencia en ERP en la nube · desde 2016",
+    heroLine1: "Tu proveedor premium",
+    heroLine2: "de SAP Business One",
+    heroAccent: "en la nube",
+    heroSub:
+      "SAP Business One en la nube, seguro y escalable — diseñado para el rendimiento, pensado para crecer y con soporte las 24 horas.",
+    clients: "Clientes",
+    partners: "Socios",
+    users: "Usuarios",
+
+    whoWeAre: {
+      eyebrow: "Quiénes somos",
+      title: "Un aliado estratégico en tu transformación.",
+      intro:
+        "Desde 2016, Cloud Taktiks es más que un proveedor de servicios. Hacemos que el ERP sea más inteligente, rápido y preparado para el futuro — reduciendo el costo total de propiedad sin comprometer el rendimiento.",
+    },
+    approach: [
+      { title: "Aprovisionamiento autoservicio", body: "Crea exactamente lo que necesitas, en el momento que lo necesitas — sin esperar por la infraestructura." },
+      { title: "Agrupación de recursos", body: "Infraestructura compartida y optimizada que mantiene alto el rendimiento y bajo el costo." },
+      { title: "Escalabilidad sin interrupciones", body: "Crece sin pausas. La capacidad se adapta a tu negocio, nunca en su contra." },
+      { title: "Monitoreo en tiempo real", body: "Supervisión total con información accionable — siempre sabes qué está pasando." },
+    ],
+
+    whatWeDo: { eyebrow: "Qué hacemos", title: "Seis formas de potenciar tu nube." },
+    globalPresence: {
+      eyebrow: "Presencia global",
+      title: "Confianza en más de 40 países.",
+      intro: "Del Medio Oriente a Europa y América Latina — pasa el cursor sobre cualquier país para resaltarlo.",
+    },
+    promise: {
+      eyebrow: "Nuestra promesa",
+      before: "No solo seguimos los estándares de la industria. ",
+      highlight: "Los definimos",
+      after: " — con seguridad, rendimiento y soporte en los que confían más de 750 empresas en más de 40 países.",
+    },
+    whyUs: {
+      eyebrow: "Por qué Cloud Taktiks",
+      title: "Construido sobre cinco promesas.",
+      intro: "Las razones por las que las empresas nos confían sus sistemas más críticos.",
+    },
+    why: [
+      { title: "Experiencia", body: "Un equipo de SAP y nube que entrega resultados desde 2016." },
+      { title: "Personalización", body: "Soluciones diseñadas en torno a tu negocio, no al revés." },
+      { title: "Costo-eficiencia", body: "Menor costo total de propiedad sin sacrificar el rendimiento." },
+      { title: "Soporte inigualable", body: "Soporte real 24/7 en Medio Oriente, Europa y América Latina." },
+      { title: "Seguridad primero", body: "Alineado con ISO/IEC 27001:2022, cifrado y monitoreado continuamente." },
+    ],
+    fromBlog: { eyebrow: "Del blog", title: "Ideas que vale la pena leer." },
+    cta: { title: "Muévete a la nube, de la forma correcta.", sub: "Hablemos de tu entorno SAP, tu seguridad y tu plan de crecimiento. Migrar con la mínima interrupción es lo nuestro." },
+
+    offerings: [
+      { slug: "sap-business-one-cloud-hosting", icon: "cloud", title: "Alojamiento en la nube de SAP Business One", short: "Alojamiento seguro y de alto rendimiento para SAP B1 en Azure y Huawei Cloud.", body: "Alojamiento optimizado para SAP Business One, diseñado para una respuesta rápida y un tiempo de inactividad mínimo. Despliegues en Microsoft Azure y Huawei Cloud compatibles con bases de datos SQL y HANA, con infraestructura escalable, copias de seguridad diarias, seguridad avanzada y monitoreo las 24 horas.", points: ["Azure y Huawei", "SQL + HANA", "Copias diarias", "Monitoreo 24/7"] },
+      { slug: "crowdstrike-endpoint-protection", icon: "shield", title: "Protección de endpoints CrowdStrike", short: "Protección de endpoints líder mundial, nativa en la nube y con IA.", body: "Ofrecemos CrowdStrike Falcon — antivirus de nueva generación con detección de amenazas por IA y análisis de comportamiento. Monitoreo ligero sin impacto en el rendimiento que bloquea ransomware y malware antes de que se propaguen.", points: ["Antivirus NG", "Detección con IA", "Análisis de conducta", "Bloqueo de ransomware"] },
+      { slug: "cyber-security-solutions", icon: "lock", title: "Soluciones de ciberseguridad", short: "Protección proactiva, del monitoreo a la respuesta ante incidentes.", body: "Servicios de protección integral que abarcan monitoreo de red, evaluación de vulnerabilidades, pruebas de penetración, protección de endpoints y respuesta ante incidentes — con soporte de cumplimiento adaptado al perfil de riesgo de tu organización.", points: ["Monitoreo de red", "Pruebas de penetración", "Análisis de vulnerabilidades", "Respuesta a incidentes"] },
+      { slug: "tsplus-remote-access", icon: "remote", title: "Acceso remoto TSplus", short: "Escritorio remoto seguro a SAP B1 — sin la complejidad de RDS/Citrix.", body: "Escritorio remoto económico que permite un acceso seguro a SAP Business One y a las aplicaciones mediante un portal web. Permisos por rol, cifrado SSL y seguridad integrada sin la carga tradicional de RDS o Citrix.", points: ["Portal web", "Por rol", "Cifrado SSL", "Sin Citrix"] },
+      { slug: "mfa-advanced-printing", icon: "key", title: "MFA e impresión avanzada", short: "Capas de autenticación extra e impresión remota a local sin fricciones.", body: "La autenticación multifactor añade capas de verificación más allá de las contraseñas para impedir el acceso no autorizado. La impresión avanzada permite imprimir de forma segura desde sesiones remotas directamente a impresoras locales — sin conflictos de controladores.", points: ["Multifactor", "Sin conflictos", "De remoto a local", "Sesiones seguras"] },
+      { slug: "microsoft-365-solutions", icon: "grid", title: "Soluciones Microsoft 365", short: "Licenciamiento, configuración y soporte integral para la suite M365.", body: "Servicio integral de Microsoft 365 que cubre licenciamiento, configuración y soporte para Outlook, Teams, SharePoint y la suite Office — integrado limpiamente con tu entorno en la nube.", points: ["Licenciamiento", "Teams y SharePoint", "Outlook", "Soporte completo"] },
+    ],
+
+    about: {
+      eyebrow: "Nosotros",
+      title: "Excelencia en ERP en la nube.",
+      intro: "No somos solo un proveedor de servicios — somos un aliado estratégico en tu transformación digital. Fundada en 2016, Cloud Taktiks se especializa en soluciones de SAP Business One en la nube, sobre HANA y SQL.",
+      missionTag: "Nuestra misión",
+      mission: "Ayudar a las empresas a superar las complejidades de la adopción de la nube mediante soluciones fluidas, seguras y escalables que mejoran la eficiencia operativa, refuerzan la seguridad de los datos e impulsan la innovación — liberando todo el potencial de la nube con la mínima interrupción.",
+      visionTag: "Nuestra visión",
+      vision: "Convertirnos en el líder mundial en soluciones de infraestructura en la nube, empoderando a empresas de todos los tamaños para prosperar en un mundo digital — innovando, escalando y alcanzando la excelencia operativa con la seguridad y la resiliencia en el centro.",
+      stats: [{ label: "Miembros del equipo" }, { label: "Oficinas" }, { label: "Clientes" }, { label: "Años" }],
+      journey: { eyebrow: "Nuestra trayectoria", title: "Del colocation a la nube.", intro: "Un ascenso constante desde sus raíces en infraestructura hasta convertirse en un socio global de SAP Business One en la nube." },
+      timeline: [
+        { year: "2016", text: "Fundación — lanzamiento de servicios de colocation e infraestructura." },
+        { year: "2018", text: "Lanzamiento de la nube gestionada para SAP Business One." },
+        { year: "2020", text: "Alianza con Microsoft Azure establecida." },
+        { year: "2022", text: "Expansión geográfica a través de varios continentes." },
+        { year: "2023", text: "Lanzamiento de SAP B1 Web Client y mejoras de seguridad." },
+        { year: "2024", text: "Más de 750 clientes en más de 40 países." },
+      ],
+      approachSection: { eyebrow: "Nuestro enfoque", title: "Cómo lo entregamos.", intro: "Ocho principios que dan forma a cada entorno en la nube que construimos y operamos para nuestros clientes." },
+      approachAreas: [
+        { icon: "key", title: "Costo total de propiedad", body: "Reduce tu TCO sin comprometer las capacidades — una infraestructura eficiente que rinde frutos." },
+        { icon: "arrow", title: "Alto rendimiento", body: "Entornos ajustados para una respuesta rápida y constante con un tiempo de inactividad mínimo." },
+        { icon: "clock", title: "Soporte 24/7", body: "Soporte ininterrumpido en Medio Oriente, Europa y América Latina." },
+        { icon: "cloud", title: "Eficiencia inigualable", body: "Operaciones optimizadas que logran más con menos, cada día." },
+        { icon: "grid", title: "Equipo experto", body: "Especialistas en SAP y nube que entregan resultados desde 2016." },
+        { icon: "shield", title: "Seguridad robusta", body: "Alineada con ISO/IEC 27001:2022 — cifrada, monitoreada y reforzada continuamente." },
+        { icon: "remote", title: "Agilidad", body: "Nos adaptamos y pivotamos con rapidez según cambian tu negocio y la tecnología." },
+        { icon: "search", title: "Escalabilidad", body: "Crece sin fricciones, sin rediseñar — una capacidad que se adapta a ti." },
+      ],
+      valuesSection: { eyebrow: "Nuestros valores", title: "Siete principios que vivimos." },
+      values: [
+        { n: "01", title: "Impulsados por la innovación", body: "Buscamos continuamente soluciones innovadoras para que nuestros clientes sigan siendo competitivos en un panorama digital en constante evolución." },
+        { n: "02", title: "Enfoque en el cliente", body: "El éxito de nuestros clientes es nuestra prioridad. Construimos relaciones a largo plazo en torno a sus objetivos de negocio." },
+        { n: "03", title: "Integridad y transparencia", body: "Mantenemos los más altos estándares de integridad con una comunicación transparente y ética en cada interacción." },
+        { n: "04", title: "Excelencia en el servicio", body: "Soporte excepcional y proactivo que garantiza una integración fluida, transiciones suaves y un crecimiento sostenido." },
+        { n: "05", title: "Seguridad y cumplimiento", body: "Priorizamos la seguridad de los datos y el cumplimiento normativo en cada solución que implementamos." },
+        { n: "06", title: "Colaboración y empoderamiento", body: "Empoderamos a las empresas para aprovechar todo el potencial de la nube, fomentando el crecimiento y la eficiencia." },
+        { n: "07", title: "Agilidad y adaptabilidad", body: "Nos mantenemos ágiles y listos para pivotar, respondiendo con eficacia a nuevos desafíos y necesidades de los clientes." },
+      ],
+    },
+
+    offeringsPage: { eyebrow: "Nuestros servicios", title: "Un socio. Toda la pila.", intro: "Alojamiento seguro, protección de endpoints de clase mundial, acceso remoto y productividad — diseñados en torno a SAP Business One y creados para crecer contigo." },
+
+    blogPage: { eyebrow: "Perspectivas", title: "El blog de Cloud Taktiks.", intro: "Reflexiones prácticas sobre ERP en la nube, SAP Business One, marcos de seguridad y continuidad del negocio." },
+    blog: { featured: "Destacado", search: "Buscar", searchPh: "Buscar artículos…", categories: "Categorías", technology: "Tecnología", digitalMarketing: "Marketing digital", recent: "Publicaciones recientes", views: "vistas" },
+
+    contact: {
+      eyebrow: "Contáctanos",
+      title: "Construyamos tu nube.",
+      intro: "Cuéntanos dónde estás y a dónde quieres llegar. Nuestro equipo en tres continentes está listo para ayudarte a migrar, proteger y escalar — con la mínima interrupción.",
+      emailUs: "Escríbenos",
+      callRegion: "Llama a tu región",
+      headquarters: "Sede central",
+      form: { name: "Nombre completo", email: "Correo profesional", company: "Empresa", help: "¿Cómo podemos ayudarte?", namePh: "Juan Pérez", emailPh: "juan@empresa.com", companyPh: "Empresa S.A.", helpPh: "Cuéntanos sobre tu entorno SAP, tus objetivos, tu cronograma…", send: "Enviar mensaje", received: "Mensaje recibido.", receivedSub: "Gracias por contactarnos. Un especialista de Cloud Taktiks se comunicará contigo en un día hábil.", sendAnother: "Enviar otro" },
+    },
+
+    footerTagline: "Excelencia en ERP en la nube desde 2016. Ayudamos a las empresas a liberar todo el potencial de la nube — con seguridad, fluidez y a gran escala.",
+    navigate: "Navegar",
+    offeringsTitle: "Servicios",
+    talkToUs: "Hablemos",
+    rights: "Todos los derechos reservados.",
+    address: "Dubái, Emiratos Árabes Unidos",
+    regions: { "Middle East": "Medio Oriente", Europe: "Europa", "Latin America": "América Latina" } as Record<string, string>,
+  },
+
+  fr: {
+    langLabel: "Français",
+    brand: "Cloud Taktiks",
+    nav: ["Accueil", "À propos", "Services", "Blog", "Contact"],
+
+    clientSupport: "Support client",
+    startMigration: "Démarrer votre migration",
+    exploreOfferings: "Explorer les services",
+    ourStory: "Notre histoire",
+    bookCall: "Réserver un appel",
+    readMore: "Lire la suite",
+    getStarted: "Commencer",
+    seeOffer: "Voir nos services",
+    allOfferings: "Tous les services",
+    readBlog: "Lire le blog",
+    learnMore: "En savoir plus",
+    scroll: "Défiler",
+    loadingExperience: "Chargement de l'expérience",
+
+    heroEyebrow: "Excellence ERP dans le cloud · depuis 2016",
+    heroLine1: "Votre fournisseur premium",
+    heroLine2: "SAP Business One",
+    heroAccent: "dans le cloud",
+    heroSub:
+      "SAP Business One dans le cloud, sécurisé et évolutif — conçu pour la performance, pensé pour la croissance et pris en charge 24h/24.",
+    clients: "Clients",
+    partners: "Partenaires",
+    users: "Utilisateurs",
+
+    whoWeAre: {
+      eyebrow: "Qui sommes-nous",
+      title: "Un allié stratégique de votre transformation.",
+      intro:
+        "Depuis 2016, Cloud Taktiks est bien plus qu'un prestataire de services. Nous rendons l'ERP plus intelligent, plus rapide et prêt pour l'avenir — en réduisant le coût total de possession sans compromettre la performance.",
+    },
+    approach: [
+      { title: "Provisionnement en libre-service", body: "Déployez exactement ce dont vous avez besoin, au moment où vous en avez besoin — sans attendre l'infrastructure." },
+      { title: "Mutualisation des ressources", body: "Une infrastructure partagée et optimisée qui maintient des performances élevées et des coûts réduits." },
+      { title: "Évolutivité transparente", body: "Grandissez sans interruption. La capacité s'adapte à votre activité, jamais l'inverse." },
+      { title: "Surveillance en temps réel", body: "Une visibilité totale avec des informations exploitables — vous savez toujours ce qui se passe." },
+    ],
+
+    whatWeDo: { eyebrow: "Ce que nous faisons", title: "Six façons de propulser votre cloud." },
+    globalPresence: {
+      eyebrow: "Présence mondiale",
+      title: "La confiance de plus de 40 pays.",
+      intro: "Du Moyen-Orient à l'Europe et l'Amérique latine — survolez un pays pour le mettre en évidence.",
+    },
+    promise: {
+      eyebrow: "Notre promesse",
+      before: "Nous ne nous contentons pas de suivre les standards du secteur. ",
+      highlight: "Nous les définissons",
+      after: " — avec une sécurité, une performance et un support auxquels plus de 750 entreprises dans plus de 40 pays font confiance.",
+    },
+    whyUs: {
+      eyebrow: "Pourquoi Cloud Taktiks",
+      title: "Bâti sur cinq promesses.",
+      intro: "Les raisons pour lesquelles les entreprises nous confient leurs systèmes les plus critiques.",
+    },
+    why: [
+      { title: "Expertise", body: "Une équipe SAP et cloud qui livre depuis 2016." },
+      { title: "Personnalisation", body: "Des solutions conçues autour de votre activité, et non l'inverse." },
+      { title: "Rentabilité", body: "Un coût total de possession réduit sans sacrifier la performance." },
+      { title: "Support inégalé", body: "Un véritable support 24/7 au Moyen-Orient, en Europe et en Amérique latine." },
+      { title: "La sécurité d'abord", body: "Conforme à la norme ISO/IEC 27001:2022, chiffré et surveillé en continu." },
+    ],
+    fromBlog: { eyebrow: "Du blog", title: "Des idées à lire absolument." },
+    cta: { title: "Passez au cloud, de la bonne façon.", sub: "Parlons de votre environnement SAP, de votre sécurité et de votre plan de croissance. Migrer avec un minimum d'interruption, c'est notre métier." },
+
+    offerings: [
+      { slug: "sap-business-one-cloud-hosting", icon: "cloud", title: "Hébergement cloud SAP Business One", short: "Hébergement sécurisé et performant pour SAP B1 sur Azure et Huawei Cloud.", body: "Un hébergement optimisé pour SAP Business One, conçu pour une réponse rapide et un temps d'arrêt minimal. Déploiements sur Microsoft Azure et Huawei Cloud prenant en charge les bases de données SQL et HANA, avec une infrastructure évolutive, des sauvegardes quotidiennes, une sécurité avancée et une surveillance 24h/24.", points: ["Azure et Huawei", "SQL + HANA", "Sauvegardes quotidiennes", "Surveillance 24/7"] },
+      { slug: "crowdstrike-endpoint-protection", icon: "shield", title: "Protection des terminaux CrowdStrike", short: "Une protection des terminaux de pointe, native du cloud et pilotée par l'IA.", body: "Nous proposons CrowdStrike Falcon — un antivirus nouvelle génération avec détection des menaces par IA et analyse comportementale. Une surveillance légère, sans impact sur les performances, qui bloque les rançongiciels et les logiciels malveillants avant leur propagation.", points: ["Antivirus NG", "Détection par IA", "Analyse comportementale", "Blocage des rançongiciels"] },
+      { slug: "cyber-security-solutions", icon: "lock", title: "Solutions de cybersécurité", short: "Une protection proactive, de la surveillance à la réponse aux incidents.", body: "Des services de protection complets couvrant la surveillance réseau, l'évaluation des vulnérabilités, les tests d'intrusion, la protection des terminaux et la réponse aux incidents — avec un accompagnement à la conformité adapté au profil de risque de votre organisation.", points: ["Surveillance réseau", "Tests d'intrusion", "Analyse des vulnérabilités", "Réponse aux incidents"] },
+      { slug: "tsplus-remote-access", icon: "remote", title: "Accès distant TSplus", short: "Bureau à distance sécurisé vers SAP B1 — sans la complexité de RDS/Citrix.", body: "Un bureau à distance économique offrant un accès sécurisé à SAP Business One et aux applications via un portail web. Permissions par rôle, chiffrement SSL et sécurité intégrée, sans la lourdeur de RDS ou Citrix.", points: ["Portail web", "Par rôle", "Chiffrement SSL", "Sans Citrix"] },
+      { slug: "mfa-advanced-printing", icon: "key", title: "MFA et impression avancée", short: "Des couches d'authentification supplémentaires et une impression distante vers locale sans accroc.", body: "L'authentification multifacteur ajoute des couches de vérification au-delà des mots de passe pour empêcher tout accès non autorisé. L'impression avancée permet d'imprimer en toute sécurité depuis des sessions distantes directement vers des imprimantes locales — sans conflit de pilotes.", points: ["Multifacteur", "Sans conflit", "Du distant au local", "Sessions sécurisées"] },
+      { slug: "microsoft-365-solutions", icon: "grid", title: "Solutions Microsoft 365", short: "Licences, configuration et support complets pour la suite M365.", body: "Un service complet Microsoft 365 couvrant les licences, la configuration et le support pour Outlook, Teams, SharePoint et la suite Office — intégré proprement à votre environnement cloud.", points: ["Licences", "Teams et SharePoint", "Outlook", "Support complet"] },
+    ],
+
+    about: {
+      eyebrow: "À propos",
+      title: "L'excellence de l'ERP cloud.",
+      intro: "Nous ne sommes pas qu'un prestataire de services — nous sommes un allié stratégique de votre transformation numérique. Fondée en 2016, Cloud Taktiks est spécialisée dans les solutions SAP Business One dans le cloud, sur HANA et SQL.",
+      missionTag: "Notre mission",
+      mission: "Aider les entreprises à surmonter les complexités de l'adoption du cloud grâce à des solutions fluides, sécurisées et évolutives qui améliorent l'efficacité opérationnelle, renforcent la sécurité des données et stimulent l'innovation — en libérant tout le potentiel du cloud avec un minimum d'interruption.",
+      visionTag: "Notre vision",
+      vision: "Devenir le leader mondial des solutions d'infrastructure cloud, en donnant aux entreprises de toutes tailles les moyens de prospérer dans un monde axé sur le numérique — en innovant, en évoluant et en atteignant l'excellence opérationnelle, avec la sécurité et la résilience au cœur de tout.",
+      stats: [{ label: "Membres de l'équipe" }, { label: "Bureaux" }, { label: "Clients" }, { label: "Années" }],
+      journey: { eyebrow: "Notre parcours", title: "Du colocation au cloud.", intro: "Une ascension constante, des racines dans l'infrastructure jusqu'à un partenaire mondial SAP Business One dans le cloud." },
+      timeline: [
+        { year: "2016", text: "Fondation — lancement des services de colocation et d'infrastructure." },
+        { year: "2018", text: "Lancement du cloud managé pour SAP Business One." },
+        { year: "2020", text: "Partenariat avec Microsoft Azure établi." },
+        { year: "2022", text: "Expansion géographique sur plusieurs continents." },
+        { year: "2023", text: "Lancement de SAP B1 Web Client et améliorations de sécurité." },
+        { year: "2024", text: "Plus de 750 clients dans plus de 40 pays." },
+      ],
+      approachSection: { eyebrow: "Notre approche", title: "Comment nous livrons.", intro: "Huit principes qui façonnent chaque environnement cloud que nous construisons et exploitons pour nos clients." },
+      approachAreas: [
+        { icon: "key", title: "Coût total de possession", body: "Réduisez votre TCO sans compromettre les capacités — une infrastructure efficace qui porte ses fruits." },
+        { icon: "arrow", title: "Performance haut de gamme", body: "Des environnements optimisés pour une réponse rapide et constante avec un temps d'arrêt minimal." },
+        { icon: "clock", title: "Support 24/7", body: "Un support continu au Moyen-Orient, en Europe et en Amérique latine." },
+        { icon: "cloud", title: "Efficacité imbattable", body: "Des opérations rationalisées qui font plus avec moins, chaque jour." },
+        { icon: "grid", title: "Équipe d'experts", body: "Des spécialistes SAP et cloud qui livrent depuis 2016." },
+        { icon: "shield", title: "Sécurité robuste", body: "Conforme à ISO/IEC 27001:2022 — chiffrée, surveillée et renforcée en continu." },
+        { icon: "remote", title: "Agilité", body: "Nous nous adaptons et pivotons rapidement à mesure que votre activité et la technologie évoluent." },
+        { icon: "search", title: "Évolutivité", body: "Grandissez en toute fluidité, sans tout refondre — une capacité qui s'adapte à vous." },
+      ],
+      valuesSection: { eyebrow: "Nos valeurs", title: "Sept principes que nous incarnons." },
+      values: [
+        { n: "01", title: "Animés par l'innovation", body: "Nous recherchons en permanence des solutions innovantes pour que nos clients restent compétitifs dans un paysage numérique en constante évolution." },
+        { n: "02", title: "Le client au centre", body: "La réussite de nos clients est notre priorité. Nous bâtissons des partenariats durables autour de leurs objectifs." },
+        { n: "03", title: "Intégrité et transparence", body: "Nous maintenons les plus hauts standards d'intégrité avec une communication transparente et éthique à chaque échange." },
+        { n: "04", title: "Excellence du service", body: "Un support exceptionnel et proactif qui garantit une intégration fluide, des transitions en douceur et une croissance durable." },
+        { n: "05", title: "Sécurité et conformité", body: "Nous priorisons la sécurité des données et la conformité réglementaire dans chaque solution que nous mettons en œuvre." },
+        { n: "06", title: "Collaboration et autonomisation", body: "Nous donnons aux entreprises les moyens d'exploiter tout le potentiel du cloud, en favorisant la croissance et l'efficacité." },
+        { n: "07", title: "Agilité et adaptabilité", body: "Nous restons agiles et prêts à pivoter, pour relever efficacement les nouveaux défis et besoins des clients." },
+      ],
+    },
+
+    offeringsPage: { eyebrow: "Nos services", title: "Un partenaire. Toute la pile.", intro: "Hébergement sécurisé, protection des terminaux de classe mondiale, accès distant et productivité — conçus autour de SAP Business One et faits pour évoluer avec vous." },
+
+    blogPage: { eyebrow: "Perspectives", title: "Le blog de Cloud Taktiks.", intro: "Des réflexions pratiques sur l'ERP cloud, SAP Business One, les cadres de sécurité et la continuité d'activité." },
+    blog: { featured: "À la une", search: "Rechercher", searchPh: "Rechercher des articles…", categories: "Catégories", technology: "Technologie", digitalMarketing: "Marketing digital", recent: "Articles récents", views: "vues" },
+
+    contact: {
+      eyebrow: "Contactez-nous",
+      title: "Construisons votre cloud.",
+      intro: "Dites-nous où vous en êtes et où vous voulez aller. Notre équipe répartie sur trois continents est prête à vous aider à migrer, sécuriser et évoluer — avec un minimum d'interruption.",
+      emailUs: "Écrivez-nous",
+      callRegion: "Appelez votre région",
+      headquarters: "Siège social",
+      form: { name: "Nom complet", email: "E-mail professionnel", company: "Entreprise", help: "Comment pouvons-nous vous aider ?", namePh: "Jean Dupont", emailPh: "jean@entreprise.com", companyPh: "Entreprise SARL", helpPh: "Parlez-nous de votre environnement SAP, de vos objectifs, de votre calendrier…", send: "Envoyer le message", received: "Message reçu.", receivedSub: "Merci de nous avoir contactés. Un spécialiste Cloud Taktiks vous répondra sous un jour ouvré.", sendAnother: "Envoyer un autre" },
+    },
+
+    footerTagline: "L'excellence de l'ERP cloud depuis 2016. Nous aidons les entreprises à libérer tout le potentiel du cloud — en toute sécurité, en toute fluidité et à grande échelle.",
+    navigate: "Naviguer",
+    offeringsTitle: "Services",
+    talkToUs: "Parlons-en",
+    rights: "Tous droits réservés.",
+    address: "Dubaï, Émirats arabes unis",
+    regions: { "Middle East": "Moyen-Orient", Europe: "Europe", "Latin America": "Amérique latine" } as Record<string, string>,
   },
 };
 

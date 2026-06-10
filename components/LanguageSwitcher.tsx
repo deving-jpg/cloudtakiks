@@ -8,6 +8,8 @@ import type { Lang } from "@/lib/i18n";
 const LANGS: { code: Lang; label: string; short: string }[] = [
   { code: "en", label: "English", short: "EN" },
   { code: "ar", label: "العربية", short: "ع" },
+  { code: "es", label: "Español", short: "ES" },
+  { code: "fr", label: "Français", short: "FR" },
 ];
 
 export default function LanguageSwitcher() {

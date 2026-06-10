@@ -65,7 +65,19 @@ export default function HorizontalOfferings() {
         {/* carousel viewport */}
         <div ref={viewportRef} className="mt-14 overflow-hidden">
           <motion.div
-            className="flex gap-6"
+            className="flex cursor-grab gap-6 active:cursor-grabbing"
+            drag="x"
+            dragConstraints={dir === "rtl" ? { left: 0, right: maxOffset } : { left: -maxOffset, right: 0 }}
+            dragElastic={0.08}
+            dragMomentum={false}
+            onDragEnd={(_, info) => {
+              const dist = info.offset.x;
+              const vel = info.velocity.x;
+              if (Math.abs(dist) < 50 && Math.abs(vel) < 300) return; // tap / tiny drag → snap back
+              const goNext = dir === "rtl" ? dist > 0 : dist < 0;
+              if (goNext) next();
+              else prev();
+            }}
             animate={{ x: dir === "rtl" ? offset : -offset }}
             transition={{ type: "spring", stiffness: 260, damping: 34 }}
           >

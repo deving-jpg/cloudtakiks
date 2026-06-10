@@ -7,12 +7,12 @@ import { LOGOS } from "@/lib/data";
 export function MarqueePills() {
   const row = [...LOGOS, ...LOGOS, ...LOGOS, ...LOGOS];
   return (
-    <div className="edge-fade relative overflow-hidden py-8">
+    <div dir="ltr" className="edge-fade relative overflow-hidden py-8">
       <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
         {row.map((p, i) => (
           <div
             key={i}
-            className="me-4 flex items-center gap-3 rounded-full border border-content/10 bg-surface px-5 py-2.5 shadow-card"
+            className="mr-4 flex items-center gap-3 rounded-full border border-content/10 bg-surface px-5 py-2.5 shadow-card"
           >
             <span className="flex h-9 items-center justify-center rounded-lg border border-content/10 bg-white px-2">
               <img src={p.src} alt={p.name} loading="lazy" decoding="async" className="h-5 w-auto object-contain" />

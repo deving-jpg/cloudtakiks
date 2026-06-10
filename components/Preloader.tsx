@@ -7,6 +7,7 @@ import Image from "next/image";
 import logo from "@/public/logo.png";
 import { Chevron } from "./Logo";
 import { markReady } from "./useAppReady";
+import { useLang } from "./LanguageProvider";
 
 const SWEEP = 3.0; // light sweep duration (s)
 const REVEAL_AT = 3000; // ms — begin opening as the light leaves
@@ -50,6 +51,7 @@ function variantFor(path: string | null): Variant {
 
 export default function Preloader() {
   const pathname = usePathname();
+  const { t, lang } = useLang();
   const [variant] = useState<Variant>(() => variantFor(pathname));
   const [revealing, setRevealing] = useState(false);
   const [done, setDone] = useState(false);
@@ -145,9 +147,12 @@ export default function Preloader() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.75, duration: 0.7 }}
-                className="mt-7 text-[11px] font-extrabold uppercase tracking-[0.45em] text-white/40"
+                className={
+                  "mt-7 text-[11px] font-extrabold text-white/40 " +
+                  (lang === "ar" ? "tracking-normal" : "uppercase tracking-[0.45em]")
+                }
               >
-                Loading experience
+                {t.loadingExperience}
               </motion.p>
             </div>
 
